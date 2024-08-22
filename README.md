@@ -7,6 +7,15 @@ Local storage for movies state
 
 Design inspiration from https://movies.disney.com/a-z
 
+#### Start app
+
+`npm i`
+`npm run dev`
+
+or
+
+https://disney-ui-challenge.netlify.app
+
 #### Definites
 
 - [x] Create a 'home' page displaying all available movies.

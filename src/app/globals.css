@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  background-color: #f1f2f3;
+}
+button:hover {
+  cursor: pointer;
+}
+
+.main {
+  background-color: #f1f2f3;
+}
+.gallery-movie-image:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 1250px) {
+  .gallery-movie-image,
+  .skeleton-loader {
+    width: 160px;
+    height: 260px;
+  }
+}
+
+@media (max-width: 855px) {
+  .gallery-movie-image,
+  .skeleton-loader {
+    width: 220px;
+    height: 320px;
+  }
+}
+
+@media (max-width: 600px) {
+  .gallery-movie-image,
+  .skeleton-loader {
+    width: 240px;
+    height: 340px;
+  }
+}
+
+.skeleton-loader {
+  width: 200px;
+  height: 200px;
+  background-color: #ababab;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}

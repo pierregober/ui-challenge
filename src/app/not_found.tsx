@@ -15,7 +15,7 @@ export default function NotFound({
 }): React.ReactElement {
   const router = useRouter();
   const { height, width } = useWindowSize();
-  const isLarge = width >= 1250;
+  const isLarge = width && width >= 1250;
 
   return (
     <Container size={isLarge ? "4" : "3"} height={`calc(${height}px - 63px)`}>

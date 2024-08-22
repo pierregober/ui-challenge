@@ -67,7 +67,7 @@ export default function Home() {
   });
   const [searchQuery, setSearchQuery] = useState("");
   const { height, width } = useWindowSize();
-  const isLarge = width >= 1250;
+  const isLarge = width && width >= 1250;
   const [loading, setLoading] = useState(true);
 
   const sortMovies = (movies: IMovieDetails[], settings: IHomeSettings) => {

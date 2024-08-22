@@ -34,7 +34,7 @@ export default function MovieDetails(): React.ReactElement {
   const pathname = usePathname();
   const { height, width } = useWindowSize();
 
-  const isLarge = width >= 1250;
+  const isLarge = width && width >= 1250;
 
   useEffect(() => {
     const location = pathname.split("/")[1];
@@ -60,7 +60,7 @@ export default function MovieDetails(): React.ReactElement {
   return (
     <Container size={isLarge ? "4" : "3"} height={`calc(${height}px - 63px)`}>
       <Flex
-        direction={width < 930 ? "column" : "row"}
+        direction={width && width < 930 ? "column" : "row"}
         p="9"
         gap="6"
         width="100%"

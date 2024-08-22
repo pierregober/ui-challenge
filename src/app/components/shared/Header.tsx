@@ -10,7 +10,7 @@ import useWindowSize from "@/hooks/useWindowSize";
 
 export default function Header() {
   const { width } = useWindowSize();
-  const isLarge = width >= 1250;
+  const isLarge = width && width >= 1250;
 
   return (
     <Container size={isLarge ? "4" : "3"}>

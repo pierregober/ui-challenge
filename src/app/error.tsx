@@ -14,7 +14,7 @@ export default function NotFound({
   error: Error;
 }): React.ReactElement {
   const { height, width } = useWindowSize();
-  const isLarge = width >= 1250;
+  const isLarge = width && width >= 1250;
   const router = useRouter();
 
   const actions = {
